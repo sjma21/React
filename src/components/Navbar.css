@@ -1,0 +1,90 @@
+/* Navbar.css */
+
+/* General Navbar Styles */
+.navbar {
+    background-color: #1f2937; /* Dark gray background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Styles */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-logo a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-logo a:hover {
+    color: #4CAF50; /* Green hover effect */
+  }
+  
+  /* Navbar Links Styles */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar-link {
+    color: #e5e7eb; /* Light gray color for links */
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease-in-out;
+  }
+  
+  /* Hover Effects for Links */
+  .navbar-link:hover {
+    color: #4CAF50; /* Green hover color */
+    transform: scale(1.1); /* Slightly enlarge the link */
+  }
+  
+  .navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar-link:hover::after {
+    width: 100%; /* Underline effect on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+/* Footer.css */
+
+/* General Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #4CAF50, #81C784); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer Content Styling */
+  .footer-content {
+    margin-bottom: 20px;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Social Icons Styling */
+  .footer-social {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #4CAF50; /* Green color on hover */
+    transform: scale(1.2); /* Scale up effect on hover */
+  }
+  
+  /* Footer Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 30px 10px;
+    }
+  
+    .footer-content p {
+      font-size: 12px;
+    }
+  
+    .footer-social {
+      margin-top: 15px;
+    }
+  }
+  
